@@ -15,6 +15,7 @@
 #include <libtransmission/block-info.h>
 #include <libtransmission/crypto-utils.h> // for tr_rand_obj()
 #include <libtransmission/completion.h>
+#include <libtransmission/resume.h>
 
 #include "test-fixtures.h"
 
@@ -506,3 +507,4 @@ TEST_F(CompletionTest, wantNone)
     EXPECT_LE(completion.left_until_done(), completion.size_when_done());
     EXPECT_EQ(completion.left_until_done(), 0);
 }
+
